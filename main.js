@@ -4,7 +4,7 @@ function addNum(a, b) {
     return a + b
 }
 
-console.log(addNum(4, 5))  //uncomment to see kata 1 result in console
+console.log(addNum(4, 5))  // toggle comment to see kata 1 result in console
 
 // kata 2 multiply (without using * 'multiplication'operator)
 
@@ -20,7 +20,7 @@ function multiplyNum(a, b) {
 
     return multiplyTotal
 }
-console.log(multiplyNum(4, 5))  //uncomment to see kata 2 result in console
+console.log(multiplyNum(4, 5))  //toggle comment to see kata 2 result in console
 
 
 // kata 3 power/exponentiation (without using ** 'power' operator)
@@ -31,17 +31,18 @@ function raiseToPower(x, n) {
     for (let index = 1; index < n; index++) {
 
         powerTotal = multiplyNum(powerTotal, x)
-        console.log(powerTotal)
+        // console.log(powerTotal)
     }
 
     return powerTotal
 
 }
-console.log(raiseToPower(4, 5))    //uncomment to see kata 3 result in console
+console.log(raiseToPower(4, 5))    // toggle comment to see kata 3 result in console
+
 
 // kata 4 factorial (without using built-in math functions or operators)
 
-// created subtraction function for use in following functions, hope it"s allowed
+// created subtraction function for use in the following functions, hope it's allowed
 
 function subtractNum(a, b) {
     return a - b
@@ -59,43 +60,42 @@ function getFactorial(n) {
 
     for (let index = 1; index < n; index++) {
 
-        // let factorMultiplier = (factorBase - 1)
         let factorMultiplier = subtractNum(factorBase, 1)
         factorStep = multiplyNum(n, factorMultiplier)
-        console.log(factorStep)
+        // console.log(factorStep)
 
         factorArray.push(factorStep)
-        console.log(factorArray)
+        // console.log(factorArray)
 
         factorBase--
 
     }
 
     factorArrayTotal = factorArray.reduce(addNum, 0)
-    console.log(factorArrayTotal)
+    // console.log(factorArrayTotal)
 
     return factorArrayTotal
 
 }
-console.log(getFactorial(5));
+console.log(getFactorial(5))
 
 // if can't use array in kata 4, then need to put another for loop or if statement to add the factorStep values to get the final result?
+
 
 // kata 5 Fibonacci
 
 let arrayFib = [0, 1]
-// let index
 
 function Fibonacci(n) {
 
     for (let index = 2; index < n; index++) {
         arrayFib[index] = addNum(arrayFib[subtractNum(index, 2)], arrayFib[subtractNum(index, 1)])
-        console.log(arrayFib[index])
-        console.log(arrayFib)
+        // console.log(arrayFib[index])
+        // console.log(arrayFib)
     }
 
     index = subtractNum(arrayFib.length, 1)
-    console.log(index)
+    // console.log(index)
 
     return arrayFib[index]
 
