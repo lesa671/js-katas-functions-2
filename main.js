@@ -4,7 +4,7 @@ function addNum(a, b) {
     return a + b
 }
 
-console.log(addNum(4, 5))  // toggle comment to see kata 1 result in console
+console.log(addNum(4, 5)) 
 
 // kata 2 multiply (without using * 'multiplication'operator)
 
@@ -20,7 +20,7 @@ function multiplyNum(a, b) {
 
     return multiplyTotal
 }
-console.log(multiplyNum(4, 5))  //toggle comment to see kata 2 result in console
+console.log(multiplyNum(4, 5)) 
 
 
 // kata 3 power/exponentiation (without using ** 'power' operator)
@@ -37,19 +37,19 @@ function raiseToPower(x, n) {
     return powerTotal
 
 }
-console.log(raiseToPower(4, 5))    // toggle comment to see kata 3 result in console
+console.log(raiseToPower(4, 5)) 
 
 
-// kata 4 factorial (without using built-in math functions or operators)
-
-// created subtraction function for use in the following functions, hope it's allowed
+// created subtraction function for use in the following function(s), hope it's allowed //
 
 function subtractNum(a, b) {
     return a - b
 }
 console.log(subtractNum(4, 5))
 
-// The following code for kata 4 utilized an array, below this commented out section is the code for this kata that does not use an array
+
+
+// Kata 4 factorial (without using built-in math functions or operators), this code uses an array, code below this commented out section does not use an array
 
 // function getFactorial(n) {
 // let factorBase = n
@@ -79,7 +79,8 @@ console.log(subtractNum(4, 5))
 // }
 // console.log(getFactorial(5))
 
-// kata 4 code, no array starts here //
+
+// kata 4 code, without using an array //
 
 
 function getFactorial(n) {
@@ -91,12 +92,12 @@ function getFactorial(n) {
 
         let factorMultiplier2 = subtractNum(factorBase, 1)
         factorResult = multiplyNum(factorMultiplier1, factorMultiplier2)
-        console.log(factorResult)
+        // console.log(factorResult)
 
         factorBase--
 
         factorMultiplier1 = factorResult
-        console.log(factorMultiplier1)
+        // console.log(factorMultiplier1)
 
     }
     return factorResult
@@ -107,11 +108,8 @@ console.log(getFactorial(7))
 
 
 
+// Kata 5 Fibonacci -  this code uses an array, below this commented out section is the code for kata 5 that does not use an array //
 
-
-
-
-// kata 5 Fibonacci
 
 // let arrayFib = [0, 1]
 
@@ -130,10 +128,10 @@ console.log(getFactorial(7))
 
 // }
 
-// console.log(Fibonacci(15))
+// console.log(Fibonacci(10))
 
 
-// kata 5 Fibonacci without using an array//
+// kata 5 Fibonacci without using an array //
 
 let fibonacciA = 0
 let fibonacciB = 1
@@ -141,14 +139,14 @@ let fibonacciC
 
 function Fibonacci(n) {
 
-for (let index = 2; index < n; index++) {
-    
-    fibonacciC = addNum(fibonacciA, fibonacciB)
-    fibonacciA = fibonacciB
-    fibonacciB = fibonacciC
-}
-return fibonacciC
+    for (let index = 2; index < n; index++) {
+
+        fibonacciC = addNum(fibonacciA, fibonacciB)
+        fibonacciA = fibonacciB
+        fibonacciB = fibonacciC
+    }
+    return fibonacciC
 
 }
 
-console.log(Fibonacci(15))
+console.log(Fibonacci(10))
