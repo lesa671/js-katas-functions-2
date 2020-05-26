@@ -49,7 +49,7 @@ function subtractNum(a, b) {
 }
 console.log(subtractNum(4, 5))
 
-
+// The following code for kata 4 utilized an array, below this commented out section is the code for this kata that does not use an array
 
 // function getFactorial(n) {
 // let factorBase = n
@@ -79,7 +79,7 @@ console.log(subtractNum(4, 5))
 // }
 // console.log(getFactorial(5))
 
-// if can't use array in kata 4, then need to put another for loop or if statement to add the factorStep values to get the final result?
+// kata 4 code, no array starts here //
 
 
 function getFactorial(n) {
@@ -88,16 +88,16 @@ function getFactorial(n) {
     let factorMultiplier1 = n
 
     for (let index = 1; index < (n); index++) {
-        
+
         let factorMultiplier2 = subtractNum(factorBase, 1)
         factorResult = multiplyNum(factorMultiplier1, factorMultiplier2)
         console.log(factorResult)
 
-        factorBase-- 
+        factorBase--
 
         factorMultiplier1 = factorResult
         console.log(factorMultiplier1)
-        
+
     }
     return factorResult
 
@@ -113,20 +113,41 @@ console.log(getFactorial(7))
 
 // kata 5 Fibonacci
 
-let arrayFib = [0, 1]
+// let arrayFib = [0, 1]
+
+// function Fibonacci(n) {
+
+//     for (let index = 2; index < n; index++) {
+//         arrayFib[index] = addNum(arrayFib[subtractNum(index, 2)], arrayFib[subtractNum(index, 1)])
+//         console.log(arrayFib[index])
+//         console.log(arrayFib)
+//     } //for loop to generate arrayFib up to nth number
+
+//     index = subtractNum(arrayFib.length, 1) //to get the index position of the nth number
+//     console.log(index)
+
+//     return arrayFib[index]
+
+// }
+
+// console.log(Fibonacci(15))
+
+
+// kata 5 Fibonacci without using an array//
+
+let fibonacciA = 0
+let fibonacciB = 1
+let fibonacciC
 
 function Fibonacci(n) {
 
-    for (let index = 2; index < n; index++) {
-        arrayFib[index] = addNum(arrayFib[subtractNum(index, 2)], arrayFib[subtractNum(index, 1)])
-        console.log(arrayFib[index])
-        console.log(arrayFib)
-    } //for loop to generate arrayFib up to nth number
-
-    index = subtractNum(arrayFib.length, 1) //to get the index position of the nth number
-    console.log(index)
-
-    return arrayFib[index]
+for (let index = 2; index < n; index++) {
+    
+    fibonacciC = addNum(fibonacciA, fibonacciB)
+    fibonacciA = fibonacciB
+    fibonacciB = fibonacciC
+}
+return fibonacciC
 
 }
 
