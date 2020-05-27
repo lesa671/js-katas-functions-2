@@ -4,7 +4,7 @@ function addNum(a, b) {
     return a + b
 }
 
-console.log(addNum(4, 5)) 
+console.log(addNum(4, 5))
 
 // kata 2 multiply (without using * 'multiplication'operator)
 
@@ -20,7 +20,7 @@ function multiplyNum(a, b) {
 
     return multiplyTotal
 }
-console.log(multiplyNum(4, 5)) 
+console.log(multiplyNum(4, 5))
 
 
 // kata 3 power/exponentiation (without using ** 'power' operator)
@@ -37,7 +37,7 @@ function raiseToPower(x, n) {
     return powerTotal
 
 }
-console.log(raiseToPower(4, 5)) 
+console.log(raiseToPower(4, 5))
 
 
 // created subtraction function for use in the following function(s), hope it's allowed //
