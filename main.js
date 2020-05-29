@@ -6,6 +6,9 @@ function addNum(a, b) {
 
 console.log(addNum(4, 5))
 
+console.log(addNum(4, 76))
+
+
 // kata 2 multiply (without using * 'multiplication'operator)
 
 function multiplyNum(a, b) {
@@ -21,6 +24,9 @@ function multiplyNum(a, b) {
     return multiplyTotal
 }
 console.log(multiplyNum(4, 5))
+
+console.log(multiplyNum(8, 10))
+
 
 
 // kata 3 power/exponentiation (without using ** 'power' operator)
@@ -39,6 +45,9 @@ function raiseToPower(x, n) {
 }
 console.log(raiseToPower(4, 5))
 
+console.log(raiseToPower(7, 8))
+
+
 
 // created subtraction function for use in the following function(s), hope it's allowed //
 
@@ -46,6 +55,9 @@ function subtractNum(a, b) {
     return a - b
 }
 console.log(subtractNum(4, 5))
+
+console.log(subtractNum(76, 4))
+
 
 
 
@@ -106,38 +118,52 @@ function getFactorial(n) {
 
 console.log(getFactorial(7))
 
+console.log(getFactorial(5))
+
+
 
 
 // Kata 5 Fibonacci -  this code uses an array, below this commented out section is the code for kata 5 that does not use an array //
 
 
-// let arrayFib = [0, 1]
-
 // function Fibonacci(n) {
+    
+//     let arrayFib = [0, 1]
+    
 
 //     for (let index = 2; index < n; index++) {
 //         arrayFib[index] = addNum(arrayFib[subtractNum(index, 2)], arrayFib[subtractNum(index, 1)])
-//         console.log(arrayFib[index])
-//         console.log(arrayFib)
+//         // console.log(arrayFib[index])
+//         // console.log(arrayFib)
+
 //     } //for loop to generate arrayFib up to nth number
 
 //     index = subtractNum(arrayFib.length, 1) //to get the index position of the nth number
-//     console.log(index)
 
 //     return arrayFib[index]
 
 // }
 
+
+// console.log(Fibonacci(8))
+
 // console.log(Fibonacci(10))
+
+// console.log(Fibonacci(15))
+
+// console.log(Fibonacci(5))
+
 
 
 // kata 5 Fibonacci without using an array //
 
-let fibonacciA = 0
-let fibonacciB = 1
-let fibonacciC
+
 
 function Fibonacci(n) {
+
+    let fibonacciA = 0
+    let fibonacciB = 1
+    let fibonacciC
 
     for (let index = 2; index < n; index++) {
 
@@ -149,4 +175,10 @@ function Fibonacci(n) {
 
 }
 
+console.log(Fibonacci(8))
+
 console.log(Fibonacci(10))
+
+console.log(Fibonacci(15))
+
+console.log(Fibonacci(5))
